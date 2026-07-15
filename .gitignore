@@ -1,0 +1,39 @@
+# Build outputs
+build/
+*.elf
+*.hex
+*.bin
+*.map
+*.o
+*.d
+*.a
+*.lst
+
+# Generated compile database
+compile_commands.json
+
+# Editor files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.nvimlog
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Debugger and programmer files
+*.log
+*.launch
+openocd.log
+
+# Temporary files
+tmp/
+temp/
+.cache/
