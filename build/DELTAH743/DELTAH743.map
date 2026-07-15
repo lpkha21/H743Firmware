@@ -1,0 +1,243 @@
+
+Discarded input sections
+
+ .group         0x00000000        0xc build/DELTAH743/src/main.o
+ .group         0x00000000        0xc build/DELTAH743/src/main.o
+ .group         0x00000000        0xc build/DELTAH743/src/main.o
+ .group         0x00000000        0xc build/DELTAH743/src/main.o
+ .group         0x00000000        0xc build/DELTAH743/src/main.o
+ .group         0x00000000        0xc build/DELTAH743/src/main.o
+ .group         0x00000000        0xc build/DELTAH743/src/main.o
+ .group         0x00000000        0xc build/DELTAH743/src/main.o
+ .group         0x00000000        0xc build/DELTAH743/src/main.o
+ .group         0x00000000        0xc build/DELTAH743/src/main.o
+ .group         0x00000000        0xc build/DELTAH743/src/main.o
+ .text          0x00000000        0x0 build/DELTAH743/src/main.o
+ .data          0x00000000        0x0 build/DELTAH743/src/main.o
+ .bss           0x00000000        0x0 build/DELTAH743/src/main.o
+ .comment       0x00000000       0x27 build/DELTAH743/src/main.o
+ .group         0x00000000        0xc build/DELTAH743/system/system_stm32h743xx.o
+ .group         0x00000000        0xc build/DELTAH743/system/system_stm32h743xx.o
+ .group         0x00000000        0xc build/DELTAH743/system/system_stm32h743xx.o
+ .group         0x00000000        0xc build/DELTAH743/system/system_stm32h743xx.o
+ .group         0x00000000        0xc build/DELTAH743/system/system_stm32h743xx.o
+ .group         0x00000000        0xc build/DELTAH743/system/system_stm32h743xx.o
+ .group         0x00000000        0xc build/DELTAH743/system/system_stm32h743xx.o
+ .group         0x00000000        0xc build/DELTAH743/system/system_stm32h743xx.o
+ .group         0x00000000        0xc build/DELTAH743/system/system_stm32h743xx.o
+ .group         0x00000000        0xc build/DELTAH743/system/system_stm32h743xx.o
+ .text          0x00000000        0x0 build/DELTAH743/system/system_stm32h743xx.o
+ .data          0x00000000        0x0 build/DELTAH743/system/system_stm32h743xx.o
+ .bss           0x00000000        0x0 build/DELTAH743/system/system_stm32h743xx.o
+ .text.SystemCoreClockUpdate
+                0x00000000       0x10 build/DELTAH743/system/system_stm32h743xx.o
+ .debug_macro   0x00000000      0xacc build/DELTAH743/system/system_stm32h743xx.o
+ .debug_macro   0x00000000      0x34e build/DELTAH743/system/system_stm32h743xx.o
+ .debug_macro   0x00000000       0x3b build/DELTAH743/system/system_stm32h743xx.o
+ .debug_macro   0x00000000       0x1c build/DELTAH743/system/system_stm32h743xx.o
+ .debug_macro   0x00000000       0x22 build/DELTAH743/system/system_stm32h743xx.o
+ .debug_macro   0x00000000       0xdf build/DELTAH743/system/system_stm32h743xx.o
+ .debug_macro   0x00000000     0x1295 build/DELTAH743/system/system_stm32h743xx.o
+ .debug_macro   0x00000000       0xe2 build/DELTAH743/system/system_stm32h743xx.o
+ .debug_macro   0x00000000       0x19 build/DELTAH743/system/system_stm32h743xx.o
+ .debug_macro   0x00000000    0x2538b build/DELTAH743/system/system_stm32h743xx.o
+ .comment       0x00000000       0x27 build/DELTAH743/system/system_stm32h743xx.o
+ .text          0x00000000       0x14 build/DELTAH743/startup/startup_stm32h743xx.o
+ .data          0x00000000        0x0 build/DELTAH743/startup/startup_stm32h743xx.o
+ .bss           0x00000000        0x0 build/DELTAH743/startup/startup_stm32h743xx.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00200000         xr
+DTCMRAM          0x20000000         0x00020000         xrw
+RAM              0x24000000         0x00080000         xrw
+RAM_D2           0x30000000         0x00048000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD build/DELTAH743/src/main.o
+LOAD build/DELTAH743/system/system_stm32h743xx.o
+LOAD build/DELTAH743/startup/startup_stm32h743xx.o
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a
+END GROUP
+                0x20020000                        _estack = (ORIGIN (DTCMRAM) + LENGTH (DTCMRAM))
+
+.isr_vector     0x08000000      0x298
+                0x08000000                        . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x298 build/DELTAH743/startup/startup_stm32h743xx.o
+                0x08000000                g_pfnVectors
+                0x08000298                        . = ALIGN (0x4)
+
+.text           0x08000298      0x184
+                0x08000298                        . = ALIGN (0x4)
+ *(.text)
+ *(.text*)
+ .text.dwtInit  0x08000298       0x28 build/DELTAH743/src/main.o
+ .text.delayMs  0x080002c0       0x2c build/DELTAH743/src/main.o
+ .text.ledInit  0x080002ec       0x48 build/DELTAH743/src/main.o
+ .text.buzzerInitOff
+                0x08000334       0x4c build/DELTAH743/src/main.o
+ .text.main     0x08000380       0x28 build/DELTAH743/src/main.o
+                0x08000380                main
+ .text.SystemInit
+                0x080003a8       0x24 build/DELTAH743/system/system_stm32h743xx.o
+                0x080003a8                SystemInit
+ .text.Reset_Handler
+                0x080003cc       0x4c build/DELTAH743/startup/startup_stm32h743xx.o
+                0x080003cc                Reset_Handler
+ .text.Default_Handler
+                0x08000418        0x4 build/DELTAH743/startup/startup_stm32h743xx.o
+                0x08000418                Default_Handler
+ *(.rodata)
+ *(.rodata*)
+ *(.init)
+ *(.fini)
+                0x0800041c                        . = ALIGN (0x4)
+                0x0800041c                        _etext = .
+                0x0800041c                        _sidata = LOADADDR (.data)
+
+.glue_7         0x0800041c        0x0
+ .glue_7        0x0800041c        0x0 linker stubs
+
+.glue_7t        0x0800041c        0x0
+ .glue_7t       0x0800041c        0x0 linker stubs
+
+.vfp11_veneer   0x0800041c        0x0
+ .vfp11_veneer  0x0800041c        0x0 linker stubs
+
+.v4_bx          0x0800041c        0x0
+ .v4_bx         0x0800041c        0x0 linker stubs
+
+.iplt           0x0800041c        0x0
+ .iplt          0x0800041c        0x0 build/DELTAH743/src/main.o
+
+.rel.dyn        0x0800041c        0x0
+ .rel.iplt      0x0800041c        0x0 build/DELTAH743/src/main.o
+
+.data           0x24000000        0x4 load address 0x0800041c
+                0x24000000                        . = ALIGN (0x4)
+                0x24000000                        _sdata = .
+ *(.data)
+ *(.data*)
+ .data.SystemCoreClock
+                0x24000000        0x4 build/DELTAH743/system/system_stm32h743xx.o
+                0x24000000                SystemCoreClock
+                0x24000004                        . = ALIGN (0x4)
+                0x24000004                        _edata = .
+
+.igot.plt       0x24000004        0x0 load address 0x08000420
+ .igot.plt      0x24000004        0x0 build/DELTAH743/src/main.o
+
+.bss            0x24000004        0x0 load address 0x08000420
+                0x24000004                        . = ALIGN (0x4)
+                0x24000004                        _sbss = .
+ *(.bss)
+ *(.bss*)
+ *(COMMON)
+                0x24000004                        . = ALIGN (0x4)
+                0x24000004                        _ebss = .
+
+.dma_buffer     0x30000000        0x0
+                0x30000000                        . = ALIGN (0x20)
+                0x30000000                        _sdma_buffer = .
+ *(.dma_buffer)
+ *(.dma_buffer*)
+                0x30000000                        . = ALIGN (0x20)
+                0x30000000                        _edma_buffer = .
+
+/DISCARD/
+ *(.comment)
+ *(.note*)
+OUTPUT(build/DELTAH743/DELTAH743.elf elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x00000000       0x32
+ .ARM.attributes
+                0x00000000       0x34 build/DELTAH743/src/main.o
+ .ARM.attributes
+                0x00000034       0x34 build/DELTAH743/system/system_stm32h743xx.o
+ .ARM.attributes
+                0x00000068       0x25 build/DELTAH743/startup/startup_stm32h743xx.o
+
+.debug_info     0x00000000      0xc69
+ .debug_info    0x00000000      0x800 build/DELTAH743/src/main.o
+ .debug_info    0x00000800      0x439 build/DELTAH743/system/system_stm32h743xx.o
+ .debug_info    0x00000c39       0x30 build/DELTAH743/startup/startup_stm32h743xx.o
+
+.debug_abbrev   0x00000000      0x307
+ .debug_abbrev  0x00000000      0x1ac build/DELTAH743/src/main.o
+ .debug_abbrev  0x000001ac      0x135 build/DELTAH743/system/system_stm32h743xx.o
+ .debug_abbrev  0x000002e1       0x26 build/DELTAH743/startup/startup_stm32h743xx.o
+
+.debug_loclists
+                0x00000000       0x4a
+ .debug_loclists
+                0x00000000       0x4a build/DELTAH743/src/main.o
+
+.debug_aranges  0x00000000       0x90
+ .debug_aranges
+                0x00000000       0x40 build/DELTAH743/src/main.o
+ .debug_aranges
+                0x00000040       0x28 build/DELTAH743/system/system_stm32h743xx.o
+ .debug_aranges
+                0x00000068       0x28 build/DELTAH743/startup/startup_stm32h743xx.o
+
+.debug_rnglists
+                0x00000000       0x5d
+ .debug_rnglists
+                0x00000000       0x2b build/DELTAH743/src/main.o
+ .debug_rnglists
+                0x0000002b       0x19 build/DELTAH743/system/system_stm32h743xx.o
+ .debug_rnglists
+                0x00000044       0x19 build/DELTAH743/startup/startup_stm32h743xx.o
+
+.debug_macro    0x00000000    0x277b2
+ .debug_macro   0x00000000       0x7d build/DELTAH743/src/main.o
+ .debug_macro   0x0000007d      0xacc build/DELTAH743/src/main.o
+ .debug_macro   0x00000b49      0x34e build/DELTAH743/src/main.o
+ .debug_macro   0x00000e97       0x3b build/DELTAH743/src/main.o
+ .debug_macro   0x00000ed2       0x1c build/DELTAH743/src/main.o
+ .debug_macro   0x00000eee       0x22 build/DELTAH743/src/main.o
+ .debug_macro   0x00000f10       0xdf build/DELTAH743/src/main.o
+ .debug_macro   0x00000fef     0x1295 build/DELTAH743/src/main.o
+ .debug_macro   0x00002284       0xe2 build/DELTAH743/src/main.o
+ .debug_macro   0x00002366       0x19 build/DELTAH743/src/main.o
+ .debug_macro   0x0000237f    0x2538b build/DELTAH743/src/main.o
+ .debug_macro   0x0002770a       0x34 build/DELTAH743/src/main.o
+ .debug_macro   0x0002773e       0x74 build/DELTAH743/system/system_stm32h743xx.o
+
+.debug_line     0x00000000      0x4be
+ .debug_line    0x00000000      0x2b8 build/DELTAH743/src/main.o
+ .debug_line    0x000002b8      0x192 build/DELTAH743/system/system_stm32h743xx.o
+ .debug_line    0x0000044a       0x74 build/DELTAH743/startup/startup_stm32h743xx.o
+
+.debug_str      0x00000000    0xe3e6d
+ .debug_str     0x00000000    0xe3e6d build/DELTAH743/src/main.o
+                              0xe3edf (size before relaxing)
+ .debug_str     0x000e3e6d    0xe3c73 build/DELTAH743/system/system_stm32h743xx.o
+ .debug_str     0x000e3e6d       0x4f build/DELTAH743/startup/startup_stm32h743xx.o
+
+.debug_frame    0x00000000       0x98
+ .debug_frame   0x00000000       0x68 build/DELTAH743/src/main.o
+ .debug_frame   0x00000068       0x30 build/DELTAH743/system/system_stm32h743xx.o
+
+.debug_line_str
+                0x00000000       0x35
+ .debug_line_str
+                0x00000000       0x35 build/DELTAH743/startup/startup_stm32h743xx.o
