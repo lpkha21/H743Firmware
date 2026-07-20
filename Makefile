@@ -22,7 +22,9 @@ INCLUDES := \
 	-Isrc \
 	-Itarget/DELTAH743 \
 	-Ilib/CMSIS/Core/Include \
-	-Ilib/CMSIS/Device/ST/STM32H7xx/Include
+	-Ilib/CMSIS/Device/ST/STM32H7xx/Include \
+	-Isrc/drivers \
+	-Isystem
 
 CFLAGS := \
 	$(ARCH_FLAGS) \
@@ -60,7 +62,8 @@ LDFLAGS := \
 
 C_SOURCES := \
 	src/main.c \
-	system/system_stm32h743xx.c
+	src/drivers/uart.c \
+	system/system_stm32h743xx.c 
 
 ASM_SOURCES := \
 	startup/startup_stm32h743xx.s

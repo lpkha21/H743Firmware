@@ -1,6 +1,7 @@
 #include <stdint.h>
 
 #include "stm32h743xx.h"
+#include "system_clock.h"
 
 uint32_t SystemCoreClock = 200000000UL;
 

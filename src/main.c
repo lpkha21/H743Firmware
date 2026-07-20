@@ -2,6 +2,7 @@
 
 #include "stm32h743xx.h"
 #include "target.h"
+#include "uart.h"
 
 static void dwtInit(void)
 {
@@ -64,8 +65,12 @@ int main(void)
     ledInit();
     dwtInit();
 
+    uart4Init(115200U);
+    uart4WriteString("DELTAH743 boot OK\n");
+
     while (1) {
         GPIOE->ODR ^= (1UL << LED0_PIN);
+        uart4WriteString("heartbeat\n");
         delayMs(500U);
     }
 }
